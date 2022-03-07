@@ -1,0 +1,195 @@
+# define mathematic function f(x) = x * 2 in python
+def f(x): 
+    return x * 2
+
+# call that function 
+f(2)
+
+# do something with the output of that function 
+result = f(2)
+print(result)
+
+# second functione xample 
+
+def f(x): 
+    return x + 1
+
+z = f(4)
+
+if z == 5: 
+    print("z is 5")
+else: 
+    print("small cat")
+
+# define a function that doesn't take any parameters
+def f(): 
+    return 1 + 1
+
+result = f()
+print(result)
+
+# define a function that takes multiple parameters 
+def f(x, y, z): 
+    return x + y + z
+
+result = f(1, 2, 3)
+print(result)
+
+# if a function doesn't have a return statement it returns "None"
+def f():
+    z = 1 + 1
+
+result = f()
+print(result)
+
+# built-in functions
+
+# return the length of an object
+# result will be 5
+len("Monty")
+
+# take an object and return a new object with the str data type 
+# convert an integer to a string 
+# result will be '100'
+str(100)
+
+# take an object and return a new object with the int data type 
+# convert a string to an integer
+# result will be 1 
+int("1")
+
+# take an object and return a floating-point number object 
+# result will be 100.0 
+float(100)
+
+# get user input 
+
+age = input("Enter your age: ")
+int_age = int(age)
+if int_age < 21: 
+    print("You are young!")
+else: 
+    print("You are a dusty bag drifting in the wind")
+
+# reusable function example: 
+def even_odd(x): 
+    if x % 2 == 0: 
+        print("even")
+    else: 
+        print("odd")
+
+even_odd(2)
+even_odd(3)
+
+# extend it some more 
+def even_odd(): 
+    n = input("type a number: ")
+    n = int(n)
+    if n % 2 == 0: 
+        print("n is even")
+    else: 
+        print ("n is odd")
+
+even_odd()
+even_odd()
+even_odd()
+
+# creating functions with optional parameters 
+def f(x=2): 
+    return x**x
+
+
+print(f())
+print(f(4))
+
+# extend it some more 
+def add_it(x, y=10): 
+    return x + y
+
+result = add_it(2)
+print(result)
+
+## global vs local scope 
+# global scope means you can read or write to them from anywhere, even outside of the function 
+x = 1
+y = 2
+z = 3
+
+# x, y, z all have global scope 
+def f(): 
+    print(x)
+    print(y)
+    print(z)
+
+f()
+
+# local scope means that you cannot access those variables outside of the fucntion 
+def f(): 
+    x = 1 
+    y = 2
+    z = 3
+
+# all of these will fail
+# NameError: name 'x' is not defined 
+print(x)
+print(y)
+print(z)
+
+# for the above example to work you'd have to do the following: 
+def f(): 
+    x = 1
+    y = 2 
+    z = 3
+    print(x)
+    print(y)
+    print(z)
+
+f()
+
+# use global keyword to do something w/ a global variable inside of a function 
+x = 100
+
+def f(): 
+    global x 
+    x += 1
+    print(x)
+
+f() 
+
+# exception handling
+a = input("type a number")
+b = input("type a number")
+a = int(a)
+b = int(b)
+try:
+    print(a / b)
+except ZeroDivisionError:
+    print("be cannot be zero")
+
+# extend it out a bit 
+try: 
+    a = input("type a number")
+    b = input("type a number")
+    a = int(a)
+    b = int(b)
+    print(a / b)
+except (ZeroDivisionError, ValueError):
+    print("Invalid input.")
+
+# Docstrings 
+def add(x, y):
+    """
+    Returns x + y
+    :param x: int. 
+    :param y: int. 
+    :return: int sum of x and y.
+    """
+    return x + y
+
+# only use a variable when needed 
+x = 100 
+print(x)
+
+# we really could just print the integer direclty in the function 
+print(100)
+
