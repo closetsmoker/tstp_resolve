@@ -1,0 +1,37 @@
+Data Structures: a format used to store and organize information.
+
+Stacks: 
+List like data structure but you can only remove the last item from a stack. 
+Removign the last item from a stack is called popping. 
+Putting the last item onto the stack is called pushing 
+LIFO data structure (last-in-first-out)
+
+There are standard libraries for building this data structure but we will do it manually 
+
+See example 1 in notes.py
+
+Reversing a String with a Stack 
+A stack can reverse an iterable, because whatever you put on a stack comes off in reverse order.
+So if we put a string on a stack we can get the reverse order by taking it off the stack
+
+See example 2 in notes.py
+
+Queues: 
+A queue is another data structure. A queue is also like a list; you can add and remove items from it, in a specific order. 
+Unlike a stack a queue is first-in-first-out or FIFO. The first item added in is always the first item taken out. 
+
+See example 3 in notes.py 
+
+Example 4 is creating a ticket queue
+
+Vocabulary
+Data Structure: A format used to store and organize information. 
+Popping:  Removing an item from a stack 
+Pushing: Pushing an item onto a stack 
+Last-in-first-out data structure: A data structure where the last item put in is the first item taken out. 
+LIFO: Last-in-first-out 
+Stack: A last-in-first-out data structure. 
+First-in-first-out data structure: A data structure where the first item added is the first item taken out. 
+FIFO: First-in-first-out
+Queue: A first-in-first-out data structure 
+Epoch: A point in time used as a reference.  
