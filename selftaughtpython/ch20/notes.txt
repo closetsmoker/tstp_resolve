@@ -1,0 +1,6 @@
+Vocabulary 
+Web Scraper: A program that extracts data from a website. 
+HTML: Hyper Text Markup Language - a language that gives websites structure. 
+HTML Tag: Like a programming keyword - it tells your browser to do something. 
+Parse: Parsing means taking a format like HTML and using a programming language to give it structure.
+	For example: turning the data into an object
